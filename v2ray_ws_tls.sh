@@ -27,7 +27,7 @@ function yellow(){
 install_nginx(){
     systemctl stop firewalld
     systemctl disable firewalld
-    yum install -y libtool perl-core zlib-devel gcc wget pcre* unzip
+    yum install -y libtool perl-core zlib-devel gcc wget pcre* unzip make
     wget https://www.openssl.org/source/openssl-1.1.1a.tar.gz
     tar xzvf openssl-1.1.1a.tar.gz
     
@@ -216,9 +216,6 @@ start_menu(){
     green " ===================================="
     green " 介绍：一键安装v2ray+ws+tls           "
     green " 系统：centos7                       "
-    green " 作者：atrandys                      "
-    green " 网站：www.atrandys.com              "
-    green " Youtube：atrandys                   "
     green " ===================================="
     echo
     green " 1. 安装v2ray+ws+tls"
